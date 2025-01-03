@@ -37,7 +37,7 @@ const styles = {
         backgroundColor: '#EEF4FF',
         width: '324px',
         height: '48.28px',
-        opacity: '0.8', // Adjusted opacity (0px would make it invisible)
+        opacity: '0.8', 
     },
     input: {
         width: '291.54px',

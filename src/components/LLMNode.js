@@ -9,31 +9,31 @@ const LLMNode = ({ data }) => {
 
     const handleApiKeyChange = (e) => {
         setApiKey(e.target.value);
-        data.onApiKeyChange(e.target.value); // Assuming this is a function passed via props
+        data.onApiKeyChange(e.target.value); 
     };
 
     const handleMaxTokensChange = (e) => {
         const value = e.target.value;
         if (value >= 0) {
             setMaxTokens(value);
-            data.onMaxTokensChange(value); // Assuming this is a function passed via props
+            data.onMaxTokensChange(value);
         }
     };
 
     const handleTemperatureChange = (e) => {
         const value = e.target.value;
         setTemperature(value);
-        data.onTemperatureChange(value); // Assuming this is a function passed via props
+        data.onTemperatureChange(value); 
     };
 
     const handleModelChange = (e) => {
         setModel(e.target.value);
-        data.onModelChange(e.target.value); // Assuming this is a function passed via props
+        data.onModelChange(e.target.value); 
     };
 
     const handleApiBaseChange = (e) => {
         setApiBase(e.target.value);
-        data.onApiBaseChange(e.target.value); // Assuming this is a function passed via props
+        data.onApiBaseChange(e.target.value); 
     };
 
     return (

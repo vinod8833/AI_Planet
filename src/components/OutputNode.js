@@ -27,12 +27,13 @@ const styles = {
         textAlign: 'center',
     },
     outputContainer: {
-        fontSize: '16px',
-        color: '#555',
-        marginTop: '20px',
-        backgroundColor: '#EEF4FF',
+        width: '291.54px',
+        height: '40.56ox',
         padding: '10px',
-        borderRadius: '8px',
+        fontSize: '14px',
+        borderRadius: '4.34px',
+        border: '1px solid #ccc',
+        outline: 'none',
     },
 };
 

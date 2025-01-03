@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { WorkflowProvider } from './context/WorkflowContext';
 import WorkflowCanvas from './components/WorkflowCanvas';
-import "./App.css"; // Ensure you have the CSS file for styles
-import InputNode from './components/InputNode'; // Import InputNode here
-import LLMNode from './components/LLMNode'; // Import LLMNode
-import OutputNode from './components/OutputNode'; // Import OutputNode
+import "./App.css"; 
+import InputNode from './components/InputNode'; 
+import LLMNode from './components/LLMNode'; 
+import OutputNode from './components/OutputNode';
+import Logo from './logo.png'; 
+
 
 const App = () => {
     const [showInputNode, setShowInputNode] = useState(false);
@@ -24,20 +26,17 @@ const App = () => {
         setShowOutputNode(true);
     };
 
-    // Define handleDeploy function
     const handleDeploy = () => {
         console.log('Deploy button clicked');
         // Add your deploy logic here
         alert("Successfully deployed! You can now chat with AI Assistant.");
     };
 
-    // Define handleRun function
     const handleRun = () => {
         console.log('Run button clicked');
         // Add your run logic here
     };
 
-    // Handle the changes from LLMNode
     const handleApiKeyChange = (apiKey) => {
         console.log('API Key:', apiKey);
     };
@@ -46,7 +45,6 @@ const App = () => {
         console.log('Max Tokens:', maxTokens);
     };
 
-    // Handle Output from LLMNode and update the output state
     const handleOutput = (outputData) => {
         setOutput(outputData);
     };
@@ -58,11 +56,12 @@ const App = () => {
                 <header className="header">
                     {/* Logo */}
                     <div className="logo">
-                        <img
-                            src="/path-to-your-logo.png" // Update with your logo path
-                            alt="OpenAGI"
-                            className="logo-image"
-                        />
+                    <img
+                      src={Logo} 
+                      alt="OpenAGI"
+                      className="logo-image"
+                    />
+
                     </div>
 
                     {/* Buttons */}
