@@ -1,0 +1,155 @@
+  .App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto; /* Center the app */
+  }
+
+  .header {
+    width: 100%; /* Use full width */
+    max-width: 1696.5px; /* Max width for larger screens */
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    opacity: 1; /* Set opacity to 1 for visibility */
+  }
+
+  .logo {
+    width: 124.25px;
+    height: 33px;
+  }
+
+  .logo-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .button, .run-button {
+    width: 78px;
+    height: 31px;
+    padding: 7px 15px;
+    border-radius: 8px 8 8 8;
+    opacity: 1; /* Set opacity to 1 for visibility */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  .run-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+  }
+
+  .run-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+  .main-content {
+    display: flex; /* Use flexbox to position sidebar and canvas */
+  }
+
+  .sidebar {
+    width: 251px; /* Fixed width for sidebar */
+    height: auto; /* Allow height to adjust */
+    margin-top: 18px;
+    border-radius: 20px 0 0 0;
+    border: 1px solid #858080;
+    padding: 22.56px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 1; /* Set opacity to 1 for visibility */
+  }
+
+  .component {
+    width: 117.05px;
+    height: 21.15px;
+  }
+
+  .divider {
+    width: 205.89px;
+    border: 1px solid #464545;
+  }
+
+  .drag-and-drop {
+    width: 117.05px;
+    height: 17px;
+  }
+
+  .input-field {
+    width: 100%; /* Use full width */
+    max-width: 205.89px; /* Max width for larger screens */
+    height: 35px;
+  }
+
+  .llm-engine, .output {
+    width: 100%; /* Use full width */
+    max-width: 205.89px; /* Max width for larger screens */
+    height: 35px;
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .button-container {
+        margin-top: 10px; /* Add space between logo and buttons */
+    }
+
+    .sidebar {
+        width: 90%; /* Use 90% width on smaller screens */
+        margin-left: 5%; /* Center the sidebar */
+        margin-right: 5%; /* Center the sidebar */
+    }
+
+    .input-field, .llm-engine, .output {
+        width: 90%; /* Use 90% width on smaller screens */
+        margin: 0 auto; /* Center the input fields */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+        padding: 0 10px; /* Reduce padding on very small screens */
+    }
+
+    .button, .run-button {
+        width: 100%; /* Full width buttons on small screens */
+    }
+
+    .sidebar {
+        padding: 10px; /* Reduce padding in the sidebar */
+    }
+  }
+
+
+
+  .llm-engine, .output {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between the image and text */
+    width: 205.89px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.logo {
+    width: 14px;
+    height: 14px;
+}
+
+.hamburger-icon {
+    font-size: 18px; /* Adjust size for the hamburger icon */
+    margin-left: auto; /* Push the hamburger icon to the right */
+}
